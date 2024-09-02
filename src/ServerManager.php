@@ -49,7 +49,7 @@ class ServerManager
         return $server;
     }
 
-    public function client($name = "")
+    public function server($name = "")
     {
         if ($name === "") {
             $name = $this->name;
@@ -71,5 +71,9 @@ class ServerManager
             throw new RuntimeException("Undefined " . $type);
         }
         return $this->newServer($serverObject, $config);
+    }
+    public function __call($name, array $arguments)
+    {
+        return $this->server()->{$name}(...$arguments);
     }
 }
