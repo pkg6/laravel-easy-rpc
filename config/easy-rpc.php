@@ -34,7 +34,7 @@ return [
         ],
         'hprose' => [
             'type' => \Pkg6\EasyRPC\HproseHttp\Client::class,
-            "url" => "http://127.0.0.1:8000/api/rpc/json",
+            "url" => "http://127.0.0.1:8000/api/rpc/hprose",
         ]
     ]
 ];
