@@ -4,7 +4,7 @@ namespace Pkg6\Laravel\EasyRPC;
 
 use Illuminate\Support\ServiceProvider;
 
-class RPCServiceProvider extends ServiceProvider
+class EasyRPCServiceProvider extends ServiceProvider
 {
     public function boot()
     {
