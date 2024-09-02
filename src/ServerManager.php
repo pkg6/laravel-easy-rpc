@@ -58,9 +58,6 @@ class ServerManager
             throw new \InvalidArgumentException("not find config key $name");
         }
         $config = $this->config[$name];
-        if (empty($config['url'])) {
-            throw new \InvalidArgumentException("not find config key url");
-        }
         $type = Arr::get($config, 'type');
         if (class_exists($type)) {
             $serverObject = new $type();
