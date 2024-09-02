@@ -1,0 +1,26 @@
+{
+    "name": "pkg6/laravel-easy-rpc",
+    "description": "Using easy-rpc in laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhiqiang",
+            "email": "zhiqiang2033@gmail.com"
+        }
+    ],
+    "require": {
+        "pkg6/easy-rpc": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pkg6\\Laravel\\EasyRPC\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "require-dev": {
+        "laravel/framework": "*"
+    }
+}
